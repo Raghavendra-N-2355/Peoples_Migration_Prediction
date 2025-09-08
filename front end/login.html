@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Migration Predictor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="choice-body">
+
+  <!-- Choice Screen -->
+  <div id="choiceScreen" class="form-box active">
+    <div class="signup-container">
+      <h2>Welcome to Migration Predictor</h2>
+      <p>Please choose an option:</p>
+      <button id="chooseLogin" class="login-btn">Login</button>
+      <button id="chooseSignup" class="login-btn">Sign Up</button>
+    </div>
+  </div>
+    
+  <!-- Login Screen -->
+  <div id="loginScreen" class="form-box">
+    <div class="signup-container">
+      <h2>🌍 Migration Predictor</h2>
+      <p class="login-subtitle">Sign in to continue</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required>
+          <small id="emailError" class="error-msg"></small>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" required>
+          <small id="passwordStrength"></small>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <p class="signup-text">
+        Don’t have an account? <a href="#" id="openSignup">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Signup Screen -->
+  <div id="signupScreen" class="form-box">
+    <div class="signup-container">
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <input type="text" id="signupUsername" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="signupEmail" placeholder="Email" required>
+          <small id="signupEmailError" class="error-msg"></small>
+        </div>
+        <div class="form-group">
+          <input type="password" id="signupPassword" placeholder="Password" required>
+          <small id="signupPasswordStrength"></small>
+        </div>
+        <div class="form-group">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+          <small id="confirmError" class="error-msg"></small>
+        </div>
+        <div class="form-group">
+          <select id="nationality" required>
+            <option value="">Select Nationality</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="login-btn">Sign Up</button>
+      </form>
+      <p><a href="#" id="closeSignup">Cancel</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

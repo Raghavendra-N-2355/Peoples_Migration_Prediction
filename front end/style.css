@@ -1,0 +1,78 @@
+/* Common */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  display: none;
+}
+
+.form-box.active {
+  display: block;
+}
+
+/* Choice Screen */
+body.choice-body {
+  background: url("../images/backgroun1.jpg") no-repeat center center/cover;
+}
+
+/* Login Screen */
+body.login-body {
+  background: url("../images/backgroun1.jpg") no-repeat center center/cover;
+}
+
+.login-container, .signup-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Signup Screen */
+body.signup-body {
+  background: url("../images/backgroun2.jpg") no-repeat center center/cover;
+}
+
+.signup-container {
+  width: 400px;
+}
+
+/* Buttons */
+.login-btn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-btn:hover {
+  background: #005fcc;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+}
